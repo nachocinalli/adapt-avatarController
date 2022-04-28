@@ -1,0 +1,279 @@
+{
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"id": "http://jsonschema.net",
+	"required": false,
+	"properties": {
+		"pluginLocations": {
+			"type": "object",
+			"required": true,
+			"properties": {
+				"config": {
+					"type": "object"
+				},
+				"course": {
+					"type": "object",
+					"properties": {
+						"_avatarController": {
+							"type": "object",
+							"required": false,
+							"legend": "Avatar Controller",
+							"properties": {
+								"_menu": {
+									"type": "object",
+									"required": false,
+									"legend": "Avatar Menu",
+									"properties": {
+										"_isEnabled": {
+											"type": "boolean",
+											"required": true,
+											"default": false,
+											"title": "Is enabled",
+											"inputType": "Checkbox",
+											"validators": [],
+											"help": "Enable or disable the avatar menu"
+										},
+										"_selector": {
+											"type": "string",
+											"required": false,
+											"default": "",
+											"title": "Selector",
+											"inputType": "Text",
+											"validators": [],
+											"help": "The selector for the avatar menu"
+										},
+										"_poseName": {
+											"type": "string",
+											"required": false,
+											"default": "",
+											"title": "Pose Name",
+											"inputType": "Text",
+											"validators": [],
+											"help": "The name of the pose to be used"
+										},
+										"_autoChange": {
+											"type": "boolean",
+											"required": false,
+											"default": true,
+											"title": "Change Page Graphic",
+											"inputType": "Checkbox",
+											"validators": [],
+											"help": "Change the page graphic"
+										}
+									}
+								},
+								"_tutor": {
+									"type": "object",
+									"required": false,
+									"legend": "Avatar Tutor",
+									"properties": {
+										"_isEnabled": {
+											"type": "boolean",
+											"required": true,
+											"default": false,
+											"title": "Is enabled",
+											"inputType": "Checkbox",
+											"validators": [],
+											"help": "Enable or disable the avatar tutor"
+										},
+										"_selector": {
+											"type": "string",
+											"required": false,
+											"default": "",
+											"title": "Selector",
+											"inputType": "Text",
+											"validators": [],
+											"help": "The selector for the avatar tutor"
+										},
+										"_poseName": {
+											"type": "string",
+											"required": false,
+											"default": "",
+											"title": "Pose Name",
+											"inputType": "Text",
+											"validators": [],
+											"help": "The name of the pose to be used"
+										},
+										"_autoChange": {
+											"type": "boolean",
+											"required": false,
+											"default": true,
+											"title": "Change Page Graphic",
+											"inputType": "Checkbox",
+											"validators": [],
+											"help": "Change the page graphic"
+										}
+									}
+								}
+							}
+
+
+
+						}
+					}
+
+				},
+				"contentobject": {
+					"type": "object",
+					"properties": {
+						"_avatarController": {
+							"type": "object",
+							"required": false,
+							"legend": "Avatar Controller",
+							"properties": {
+								"_isEnabled": {
+									"type": "boolean",
+									"required": true,
+									"default": false,
+									"title": "Is enabled",
+									"inputType": "Checkbox",
+									"validators": [],
+									"help": "Controls whether the Avatar Controller extension is enabled or disabled."
+								},
+								"_selector": {
+									"type": "string",
+									"required": false,
+									"default": "",
+									"title": "Selector",
+									"inputType": "Text",
+									"validators": [],
+									"help": "The selector to use to find the avatar container."
+								},
+								"_poseName": {
+									"type": "string",
+									"required": false,
+									"default": "",
+									"title": "Pose name",
+									"inputType": "Text",
+									"validators": [],
+									"help": "The name of the pose to use for the avatar."
+								}
+
+							}
+						}
+					}
+				},
+				"article": {
+					"type": "object",
+					"properties": {
+						"_avatarController": {
+							"type": "object",
+							"required": false,
+							"legend": "Avatar Controller",
+							"properties": {
+								"_isEnabled": {
+									"type": "boolean",
+									"required": true,
+									"default": false,
+									"title": "Is enabled",
+									"inputType": "Checkbox",
+									"validators": [],
+									"help": "Controls whether the Avatar Controller extension is enabled or disabled."
+								},
+								"_selector": {
+									"type": "string",
+									"required": false,
+									"default": "",
+									"title": "Selector",
+									"inputType": "Text",
+									"validators": [],
+									"help": "The selector to use to find the avatar container."
+								},
+								"_poseName": {
+									"type": "string",
+									"required": false,
+									"default": "",
+									"title": "Pose name",
+									"inputType": "Text",
+									"validators": [],
+									"help": "The name of the pose to use for the avatar."
+								}
+
+							}
+						}
+					}
+				},
+				"block": {
+					"type": "object",
+					"properties": {
+						"_avatarController": {
+							"type": "object",
+							"required": false,
+							"legend": "Avatar Controller",
+							"properties": {
+								"_isEnabled": {
+									"type": "boolean",
+									"required": true,
+									"default": false,
+									"title": "Is enabled",
+									"inputType": "Checkbox",
+									"validators": [],
+									"help": "Controls whether the Avatar Controller extension is enabled or disabled."
+								},
+								"_selector": {
+									"type": "string",
+									"required": false,
+									"default": "",
+									"title": "Selector",
+									"inputType": "Text",
+									"validators": [],
+									"help": "The selector to use to find the avatar container."
+								},
+								"_poseName": {
+									"type": "string",
+									"required": false,
+									"default": "",
+									"title": "Pose name",
+									"inputType": "Text",
+									"validators": [],
+									"help": "The name of the pose to use for the avatar."
+								}
+
+							}
+						}
+					}
+				},
+				"component": {
+					"type": "object",
+					"properties": {
+						"_avatarController": {
+							"type": "object",
+							"required": false,
+							"legend": "Avatar Controller",
+							"properties": {
+								"_isEnabled": {
+									"type": "boolean",
+									"required": true,
+									"default": false,
+									"title": "Is enabled",
+									"inputType": "Checkbox",
+									"validators": [],
+									"help": "Controls whether the Avatar Controller extension is enabled or disabled."
+								},
+								"_selector": {
+									"type": "string",
+									"required": false,
+									"default": "",
+									"title": "Selector",
+									"inputType": "Text",
+									"validators": [],
+									"help": "The selector to use to find the avatar container."
+								},
+								"_poseName": {
+									"type": "string",
+									"required": false,
+									"default": "",
+									"title": "Pose name",
+									"inputType": "Text",
+									"validators": [],
+									"help": "The name of the pose to use for the avatar."
+								}
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

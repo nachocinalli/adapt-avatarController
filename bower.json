@@ -1,0 +1,18 @@
+{
+  "name": "adapt-avatarController",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nachocinalli/adapt-avatarController.git"
+  },
+  "version": "0.0.1",
+  "framework": ">=5.14.0",
+  "homepage": "https://github.com/nachocinalli/adapt-avatarController",
+  "bugs": "https://github.com/nachocinalli/adapt-avatarController/issues",
+  "extension": "avatarController",
+  "displayName": "Avatar Controller",
+  "description": "An extension to use with the avatar component",
+  "main": "/js/adapt-avatarController.js",
+  "keywords": ["adapt-plugin", "adapt-extension"],
+  "license": "GPL-3.0",
+  "targetAttribute": "_avatarController"
+}

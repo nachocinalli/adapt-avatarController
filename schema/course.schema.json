@@ -1,0 +1,83 @@
+{
+  "$anchor": "avatarController-course",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "course"
+    },
+    "with": {
+      "properties": {
+        "_avatarController": {
+          "type": "object",
+          "title": "Avatar Controller",
+          "default": {},
+          "properties": {
+            "_menu": {
+              "type": "object",
+              "title": "Avatar Menu",
+              "default": {},
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "title": "Is Enabled",
+                  "description": "Is the avatar menu enabled?",
+                  "default": false
+                },
+                "_selector": {
+                  "type": "string",
+                  "title": "Selector",
+                  "description": "The selector for the avatar menu.",
+                  "default": ""
+                },
+                "_poseName": {
+                  "type": "string",
+                  "title": "Pose Name",
+                  "description": "The name of the pose to use for the avatar menu.",
+                  "default": ""
+                },
+                "_autoChange": {
+                  "type": "boolean",
+                  "title": "Change Page Graphic",
+                  "description": "Should the page graphic be changed?",
+                  "default": true
+                }
+              }
+            },
+            "_tutor": {
+              "type": "object",
+              "title": "Avatar Tutor",
+              "default": {},
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "title": "Is Enabled",
+                  "description": "Is the avatar tutor enabled?",
+                  "default": false
+                },
+                "_selector": {
+                  "type": "string",
+                  "title": "Selector",
+                  "description": "The selector for the avatar tutor.",
+                  "default": ""
+                },
+                "_poseName": {
+                  "type": "string",
+                  "title": "Pose Name",
+                  "description": "The name of the pose to use for the avatar tutor.",
+                  "default": ""
+                },
+                "_autoChange": {
+                  "type": "boolean",
+                  "title": "Auto Change Pose",
+                  "description": "Should the avatar tutor change the pose automatically?",
+                  "default": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$anchor": "avatarController-block",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "block"
+    },
+    "with": {
+      "properties": {
+        "_avatarController": {
+          "type": "object",
+          "title": "Avatar Controller",
+          "default": {},
+
+          "properties": {
+            "_isEnabled": {
+              "type": "boolean",
+              "title": "Is Enabled",
+              "default": false
+            },
+            "_selector": {
+              "type": "string",
+              "title": "Selector",
+              "default": ""
+            },
+            "_poseName": {
+              "type": "string",
+              "title": "Pose Name",
+              "default": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}
