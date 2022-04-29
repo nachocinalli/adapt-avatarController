@@ -47,7 +47,7 @@ class AvatarController extends Backbone.Controller {
 
     const options = { model: avatarTutorController, avatarModel: this.avatarModel, parentView: view };
     const _selector = avatarTutorController.get('_selector');
-    const _notifyEl = $(".tutor[data-adapt-id='" + adaptModel.get('_id') + "']");
+    const _notifyEl = $(".notify__popup[data-adapt-id='" + adaptModel.get('_id') + "']");
     const el = _.isEmpty(_selector) ? _notifyEl : _notifyEl.find(_selector);
 
     const avatarControllerView = new AvatarControllerView(options);
