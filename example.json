@@ -1,5 +1,29 @@
-    // course.json
-    "_avatarController": {
-        "_isEnabled": true
-    }
+// course.json
+"_avatarController": {
+        "_menu": {
+          "_isEnabled": true,
+          "_selector": "",
+          "_poseName": "",
+          "_autoChange": true
+        },
+        "_tutor": {
+          "_isEnabled": true,
+          "_selector": ".notify__popup-inner",
+          "_poseName": "",
+          "_autoChange": true
+        }
+      }
 
+//contentObjects.json
+"_avatarController": {
+    "_isEnabled": true,
+    "_selector": ".page__header-inner",
+    "_poseName": ""
+  }
+
+//blocks.json
+"_avatarController": {
+    "_isEnabled": true,
+    "_selector": "",
+    "_poseName": "pose-right"
+}
