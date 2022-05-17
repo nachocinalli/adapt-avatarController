@@ -77,6 +77,7 @@ class AvatarController extends Backbone.Controller {
     const avatarPage = this.avatarModel.getAncestorModels().find(model => model.get('_type') === 'page');
 
     const avatarSelected = this.avatarModel.getSelectedItem();
+    if (!avatarSelected) return;
     const _poseMenu = avatarMenuController.get('_poseName');
     const pose = _.isEmpty(_poseMenu) ? avatarSelected._pose[avatarSelected._poseIndex] : this.avatarModel.getPoseByName(avatarSelected._index, _poseMenu);
     if (!pose) return;
