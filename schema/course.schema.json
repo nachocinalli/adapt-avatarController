@@ -74,6 +74,89 @@
                   "default": false
                 }
               }
+            },
+            "_media": {
+              "type": "array",
+              "title": "Media",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "_id": {
+                    "type": "string",
+                    "title": "Media model id",
+                    "default": ""
+                  },
+                  "_avatars": {
+                    "type": "array",
+                    "title": "Avatars",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "mp4": {
+                          "type": "string",
+                          "isObjectId": true,
+                          "title": "MP4 source",
+                          "_backboneForms": {
+                            "type": "Asset",
+                            "media": "video"
+                          }
+                        },
+                        "ogv": {
+                          "type": "string",
+                          "isObjectId": true,
+                          "title": "OGV source",
+                          "_backboneForms": {
+                            "type": "Asset",
+                            "media": "video"
+                          }
+                        },
+                        "webm": {
+                          "type": "string",
+                          "isObjectId": true,
+                          "title": "WebM source",
+                          "_backboneForms": {
+                            "type": "Asset",
+                            "media": "video"
+                          }
+                        },
+                        "mp3": {
+                          "type": "string",
+                          "isObjectId": true,
+                          "title": "MP3 source",
+                          "_backboneForms": {
+                            "type": "Asset",
+                            "media": "audio"
+                          }
+                        },
+                        "source": {
+                          "type": "string",
+                          "title": "External source",
+                          "description": "Enter an external link, such as a YouTube URL",
+                          "default": ""
+                        },
+                        "type": {
+                          "type": "string",
+                          "title": "External source type",
+                          "description": "Select the external source type, for a YouTube link this would be 'video/youtube', and 'video/vimeo' for Vimeo",
+                          "default": "",
+                          "enum": ["", "video/youtube", "video/vimeo"],
+                          "_backboneForms": "Select"
+                        },
+                        "poster": {
+                          "type": "string",
+                          "isObjectId": true,
+                          "title": "Poster frame",
+                          "description": "Image displayed before the video is played (except on Vimeo)",
+                          "_backboneForms": {
+                            "type": "Asset",
+                            "media": "image"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }

@@ -104,6 +104,105 @@
 											"help": "Change the page graphic"
 										}
 									}
+								},
+								"_media": {
+									"type": "array",
+									"required": false,
+									"title": "Media Items",
+									"items": {
+										"type": "object",
+										"required": false,
+										"title": "Items",
+										"properties": {
+											"_id": {
+												"type": "string",
+												"required": true,
+												"title": "Media model id",
+												"inputType": "Text",
+												"validators": ["required"],
+												"translatable": true
+											},
+											"_avatars": {
+												"type": "array",
+												"required": false,
+												"title": "Avatars",
+												"items": {
+													"type": "object",
+													"required": false,
+													"title": "Items",
+													"properties": {
+														"mp4": {
+															"type": "string",
+															"required": false,
+															"default": "",
+															"title": "MP4 Link",
+															"inputType": "Asset:video",
+															"validators": [],
+															"help": "Link to an MP4 video"
+														},
+														"ogv": {
+															"type": "string",
+															"required": false,
+															"default": "",
+															"title": "OGV Link",
+															"inputType": "Asset:video",
+															"validators": [],
+															"help": "Link to an OGV video"
+														},
+														"webm": {
+															"type": "string",
+															"required": false,
+															"default": "",
+															"title": "WEBM Link",
+															"inputType": "Asset:video",
+															"validators": [],
+															"help": "Link to a WEBM video"
+														},
+														"mp3": {
+															"type": "string",
+															"required": false,
+															"default": "",
+															"title": "MP3 Link",
+															"inputType": "Asset:audio",
+															"validators": [],
+															"help": "Link to an MP3 audio"
+														},
+														"source": {
+															"type": "string",
+															"required": false,
+															"default": "",
+															"title": "Source URL",
+															"inputType": "Text",
+															"validators": [],
+															"help": "Enter an external link, such as a YouTube URL"
+														},
+														"type": {
+															"type": "string",
+															"required": false,
+															"enum": ["", "video/youtube", "video/vimeo"],
+															"default": "",
+															"title": "Type",
+															"inputType": {
+																"type": "Select",
+																"options": ["", "video/youtube", "video/vimeo"]
+															},
+															"validators": [],
+															"help": "Select the 'Source URL' type, for a YouTube link this would be 'video/youtube', and 'video/vimeo' for Vimeo."
+														},
+														"poster": {
+															"type": "string",
+															"required": false,
+															"default": "",
+															"title": "Poster Link",
+															"inputType": "Asset:image",
+															"validators": [],
+															"help": "Image displayed before the video is played (except on Vimeo)"
+														}
+													}
+												}
+											}
+										}
+									}
 								}
 							}
 

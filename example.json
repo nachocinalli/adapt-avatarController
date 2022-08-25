@@ -12,6 +12,33 @@
           "_poseName": "",
           "_autoChange": true
         }
+        "_media": [
+          {
+            "_id" : "c-40"
+            "_avatars" : [
+              {
+                "mp4": "course/en/assets/avatar-1.mp4",
+                "ogv": "",
+                "webm": "",
+                "mp3": "",
+                "source": "",
+                "type": "",
+                "poster": ""
+              },
+              {
+                "mp4": "course/en/assets/avatar-2.mp4",
+                "ogv": "",
+                "webm": "",
+                "mp3": "",
+                "source": "",
+                "type": "",
+                "poster": ""
+              }
+            ]
+
+            
+          }
+        ]
       }
 
 //contentObjects.json

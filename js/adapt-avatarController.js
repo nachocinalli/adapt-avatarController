@@ -29,12 +29,35 @@ class AvatarController extends Backbone.Controller {
 
   setupEventListeners() {
     this.listenTo(Adapt, {
+      'avatar:changed': this.onAvatarChanged,
       'tutor:opened': this.onTutorOpened,
       'menuView:preRender': this.onMenuPreRender,
       'menuView:postRender': this.onMenuPostRender,
       'pageView:postRender articleView:postRender componentView:postRender blockView:postRender': this.onPostRender
     });
 
+  }
+
+  onAvatarChanged(avatar) {
+    const avatarSelected = avatar.getSelectedItem();
+    const avatarControllerModel = Adapt.course.get('_avatarController');
+    const mediaItems = avatarControllerModel._media;
+    if (!mediaItems) return;
+    mediaItems.forEach(element => {
+      const mediaComponent = Adapt.findById(element._id);
+      if (mediaComponent) {
+        const _media = mediaComponent.get('_media');
+        if (!mediaComponent.has('originalMedia')) {
+          mediaComponent.set('originalMedia', Object.assign({}, _media));
+        }
+        const avatarMedia = element._avatars[avatarSelected._index];
+        if (avatarMedia) {
+          mediaComponent.set('_media', Object.assign(_media, avatarMedia));
+        } else {
+          mediaComponent.set('_media', mediaComponent.get('originalMedia'));
+        }
+      };
+    });
   }
 
   onTutorOpened(view) {
